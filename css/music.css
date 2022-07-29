@@ -1,41 +1,80 @@
+/* astrid should be at the very top and is the styling for the entire page */
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body{
+  background-color: #000000;
+}
+  /* header section */
+
+header #demotext {
+  width: 103.5%;
+  color: #FFFFFF;
+  background: #000000;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+  color: #FFFFFF;
+  background: #000000;
+  font-family: 'Creepster', cursive;
+  font-size: 180px;
+  text-align: center;
+  margin-top: 5%;
+  margin-left: -2%;
+}
+
+#leftcolumn {
+  background-color: #49ff18;
+  height: 2000px;
+}
+
+#rightcolumn {
+  background-color: white;
+  height: 2000px;
+}
+
+footer {
+  align-items: center;
+  background-color: rgb(207, 253, 0);
+  height: 300px;
+}
 
 /* breakpoints */
  /* Small devices (landscape phones, 576px and up) */
- @media only screen and (min-width: 576px) {
+ /* @media only screen and (min-width: 576px) {
     body {
       background-color: red;
     }
   
-  }
+  } */
   
    /* Medium devices (tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
+  /* @media only screen and (min-width: 768px) {
     body {
       background-color: hotpink;
     }
   
-  }
+  } */
   
    /* Large devices (desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
+  /* @media only screen and (min-width: 992px) {
     body {
       background-color: green;
     }
   
-  }
+  } */
   
    /* X-Large devices (large desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
+  /* @media only screen and (min-width: 1200px) {
     body {
       background-color: blue;
     }
   
-  }
+  } */
   
    /* XX-Large devices (larger desktops, 1400px and up) */
-  @media only screen and (min-width: 1400px) {
+  /* @media only screen and (min-width: 1400px) {
     body {
       background-color: gold;
     }
-  }
+  } */
