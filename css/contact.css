@@ -34,9 +34,6 @@ header #demotext {
   height: 1300px;
 }
 
-#contact{
-  margin-top: 50px;
-}
 
 #instagram{
   align-content: center;
@@ -53,7 +50,7 @@ header #demotext {
 } */
 
 footer .fab {
-  color:  rgb(252, 113, 0);
+  color:  white;
 
 }
 footer .fab:hover{
@@ -77,7 +74,7 @@ a:-webkit-any-link {
 }
 
 #leftcolumnft a:hover{
-  color: black;
+  color: white;
 }
 
 #rightcolumnft {

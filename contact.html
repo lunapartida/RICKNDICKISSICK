@@ -25,7 +25,7 @@
         <div class="container-fluid">
           <div class="logo">
             <a href="https://www.instagram.com" target="_blank">
-            <img src="./img/radioactive.png" height="100px" width="100px" alt="Green radioactive sign"> </a>
+            <img src="./img/rnd.png" height="100px" width="200px" alt="Green radioactive sign"> </a>
         </div>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -69,30 +69,54 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col text-center mb-5" id="leftcolumn">
-        <h1>Get in touch with us!</h1>
+        <h1>GET IN TOUCH WITH US!</h1>
 
-        <div class="row my-5" id="contact">
-          <div class="col">
-            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-          </div>
-        </div>
+        <!-- Wrapper container -->
+<div class="container py-4">
 
-        <form class="was-validated">
-          <div class="mb-3">
-            <label for="validationTextarea" class="form-label">Textarea</label>
-            <textarea class="form-control is-invalid" id="validationTextarea" placeholder="Required example textarea" required></textarea>
-            <div class="invalid-feedback">
-              Please enter a message in the textarea.
-            </div>
-          </div>
+  <!-- Bootstrap 5 starter form -->
+  <form id="contactForm">
 
-          <div class="mb-3">
-            <a href="http://127.0.0.1:5501/home.html"><button class="btn btn-primary" type="submit" disabled>Submit form</button></a>
-          </div>
-        </form>
+    <!-- Name input -->
+    <div class="mb-3">
+      <label class="form-label" for="name">Name</label>
+      <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+      <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+    </div>
+
+    <!-- Email address input -->
+    <div class="mb-3">
+      <label class="form-label" for="emailAddress">Email Address</label>
+      <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+      <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+      <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+    </div>
+
+    <!-- Message input -->
+    <div class="mb-3">
+      <label class="form-label" for="message">Message</label>
+      <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+      <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+    </div>
+
+    <!-- Form submissions success message -->
+    <div class="d-none" id="submitSuccessMessage">
+      <div class="text-center mb-3">Form submission successful!</div>
+    </div>
+
+    <!-- Form submissions error message -->
+    <div class="d-none" id="submitErrorMessage">
+      <div class="text-center text-danger mb-3">Error sending message!</div>
+    </div>
+
+    <!-- Form submit button -->
+    <div class="d-grid">
+      <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+    </div>
+
+  </form>
+
+</div>
 
         <div class="col my-5 text-center">
           <h1>FOLLOW US ON INSTAGRAM!</h1>

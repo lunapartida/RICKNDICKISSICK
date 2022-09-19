@@ -42,7 +42,7 @@ header #demotext {
 } */
 
 footer .fab {
-  color:  rgb(252, 113, 0);
+  color:  white;
 
 }
 footer .fab:hover{
@@ -66,7 +66,7 @@ a:-webkit-any-link {
 }
 
 #leftcolumnft a:hover{
-  color: black;
+  color: white;
 }
 
 #rightcolumnft {
